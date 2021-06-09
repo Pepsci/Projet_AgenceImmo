@@ -10,10 +10,6 @@ public class Client {
 	private String password;
 	private String statut;
 	
-	public Client() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 
 	public Client(String nom, String prenom, int tel, String mail, String password, String statut) {
 		super();

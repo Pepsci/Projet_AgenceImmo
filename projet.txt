@@ -1,0 +1,63 @@
+#Page Accueille
+
+hors connection
+header
+connection
+Nav-bar (nav flottante transparente en dur ? )
+Logo - Acheter - Louer - Vendre - Nous
+
+Connecter
+header
+Mon compte - Mes favoris
+Logo - Acheter - Louer - Vendre - Nous 
+
+Body
+
+image/message sur la société 
+
+3 scroll bar qui se croise avec les derniers ajout (les 3 bouge en même temps avec le même scroll)
+==>
+<==
+==>
+
+#page profil
+
+header
+nav-bar
+
+accès modification du profil
+acces aux favoris
+
+#Pages selection Produits
+
+moteur de recherche (ville, surface, prix)
+
+Affichage de tout les biens de la section choisie sous forme de carte
+_Carte
+photo du produit
+prix
+surface
+nombre de pièce
+date mise en ligne
+
+#Pages produit
+
+galerie photo du bien
+"adresse" afficher sur un carte google
+Prix
+surface
+nbr de pièces 
+possibilité d'ajouter au favoris
+
+#Page Admin
+
+ajout supression de bien
+accès liste clients
+
+#Footer
+
+présent sur tout les pages
+acces aux différents réseaux
+accès form contact (présent dans nous)
+
+calendier pour prise de rdv vendeur et client
