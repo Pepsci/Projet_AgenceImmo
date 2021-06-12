@@ -17,15 +17,15 @@ public class BienDao implements IDAO<Bien> {
 		boolean message = false;
 		
 		try {
-			PreparedStatement req = connect.prepareStatement("INSERT INTO bien (typeBien,statut,adress,surface,nbrPiece,ajoutele,idClient)"
+			PreparedStatement req = connect.prepareStatement("INSERT INTO bien (typeBien,statut,adress,prix,surface,nbrPiece,ajoutele)"
 					+ "value(?,?,?,?,?,now(),?");
 			
 			req.setString(1, object.getTypeDeBien());
 			req.setString(2, object.getStatut());
-			req.setString(3, object.getStatut());
-			req.setString(4, object.getAdresse());
+			req.setString(3, object.getAdresse());
+			req.setFloat(4, object.getPrix());
 			req.setFloat(5, object.getSurface());
-			req.setInt(6, object.getIdClient());
+			req.setInt(6, object.getNbrPiece());
 			
 			req.executeUpdate();
 			

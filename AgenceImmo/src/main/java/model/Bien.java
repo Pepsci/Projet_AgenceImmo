@@ -6,24 +6,53 @@ public class Bien {
 	private String typeDeBien;
 	private String statut;
 	private String adresse;
-	private float surface;
+	private Float prix;
+	private Float surface;
 	private int nbrPiece;
+	private String imgCouv;
 	private String ajouteLe;
 	private int idClient;
 	
+	
+
 	public Bien() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Bien(String typeDeBien, String statut, String adresse, float surface, int nbrPiece, String ajouteLe,
-			int idClient) {
+	public Bien(String typeDeBien, String statut, String adresse, Float prix, float surface, int nbrPiece) {
 		super();
 		this.typeDeBien = typeDeBien;
 		this.statut = statut;
 		this.adresse = adresse;
+		this.prix = prix;
 		this.surface = surface;
 		this.nbrPiece = nbrPiece;
+	}
+
+	public Bien(String typeDeBien, String statut, String adresse, Float prix, float surface, int nbrPiece,
+			String imgCouv, String ajouteLe) {
+		super();
+		this.typeDeBien = typeDeBien;
+		this.statut = statut;
+		this.adresse = adresse;
+		this.prix = prix;
+		this.surface = surface;
+		this.nbrPiece = nbrPiece;
+		this.imgCouv = imgCouv;
+		this.ajouteLe = ajouteLe;
+	}
+
+	public Bien(String typeDeBien, String statut, String adresse, Float prix, float surface, int nbrPiece,
+			String imgCouv, String ajouteLe, int idClient) {
+		super();
+		this.typeDeBien = typeDeBien;
+		this.statut = statut;
+		this.adresse = adresse;
+		this.prix = prix;
+		this.surface = surface;
+		this.nbrPiece = nbrPiece;
+		this.imgCouv = imgCouv;
 		this.ajouteLe = ajouteLe;
 		this.idClient = idClient;
 	}
@@ -60,6 +89,14 @@ public class Bien {
 		this.adresse = adresse;
 	}
 
+	public float getPrix() {
+		return prix;
+	}
+	
+	public void setPrix(Float prix) {
+		this.prix = prix;
+	}
+	
 	public float getSurface() {
 		return surface;
 	}
@@ -90,6 +127,14 @@ public class Bien {
 
 	public void setIdClient(int idClient) {
 		this.idClient = idClient;
+	}
+
+	public String getImgCouv() {
+		return imgCouv;
+	}
+
+	public void setImgCouv(String imgCouv) {
+		this.imgCouv = imgCouv;
 	}
 	
 
