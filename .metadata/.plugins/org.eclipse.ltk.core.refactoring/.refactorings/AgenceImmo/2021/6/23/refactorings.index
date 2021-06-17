@@ -1,1 +1,18 @@
 1623157790167	Rename package 'controller'
+1623330193581	Rename resource 'fragments'
+1623330201008	Rename resource 'component'
+1623332463783	Delete element
+1623333052166	Move 'components' to 'webapp'
+1623334250497	Move 'style.css' to 'css'
+1623398117124	Rename resource 'ajoutBien.jsp'
+1623398140854	Rename resource 'form.jsp'
+1623422450532	Delete element
+1623594646781	Move compilation unit
+1623594681564	Move compilation unit
+1623594718845	Move compilation unit
+1623594835768	Delete element
+1623596746002	Rename resource 'test.html'
+1623596757502	Delete element
+1623601550792	Encapsulate field 'status'
+1623606693133	Encapsulate field 'surface'
+1623606699590	Encapsulate field 'nbrpiece'

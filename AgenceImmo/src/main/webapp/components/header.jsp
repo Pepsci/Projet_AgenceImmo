@@ -16,7 +16,7 @@
         <ul>
             <li class="navlinks"><a href="#">Acheter</a></li>
             <li class="navlinks"><a href="#">Vendre</a></li>
-            <li class="navlinks"><a href="#">Louer</a></li>
+            <li class="navlinks"><a href="${context}/formtest">Louer</a></li>
             <li class="navlinks"><a href="${context}/formajoutbien">Contatc</a></li>
         </ul>
     </nav>
