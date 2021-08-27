@@ -56,4 +56,10 @@ public class BienDao implements IDAO<Bien> {
 		return false;
 	}
 
+	@Override
+	public boolean delete(int Id_test) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

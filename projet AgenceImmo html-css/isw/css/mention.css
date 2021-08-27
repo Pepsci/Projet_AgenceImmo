@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #19232b;
+}
+
+nav{
+    display: flex;
+}
+
+.logo img{
+    height: 100px;
+    width: auto;
+}
+
+.mention span{
+    color: #40E0D0;
+    font-weight: bold;
+    font-size: 50px;
+}

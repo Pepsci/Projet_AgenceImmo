@@ -14,10 +14,10 @@
 <header><a href="${context}/index">agenceimmo</a></header>
     <nav>
         <ul>
-            <li class="navlinks"><a href="#">Acheter</a></li>
-            <li class="navlinks"><a href="#">Vendre</a></li>
-            <li class="navlinks"><a href="${context}/formtest">Louer</a></li>
-            <li class="navlinks"><a href="${context}/formajoutbien">Contatc</a></li>
+            <li class="navlinks"><a href="${context}/achatselection">Acheter</a></li>
+            <!-- <li class="navlinks"><a href="#">Vendre</a></li> -->
+            <li class="navlinks"><a href="${context}/locationselection">Louer</a></li>
+            <%-- <li class="navlinks"><a href="${context}/formtest">Contatc</a></li> --%>
         </ul>
     </nav>
 

@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+img{
+    width: 250px;
+    height: 150px;
+}
+header{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    
+}
+header, a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    min-height: 8vh;
+    background-color: cornsilk;
+    color: black;
+}
+nav, ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-links, li{
+    cursor: pointer;
+    list-style: none;
+}
+nav ul li a{
+    width: 120px;
+    height: 100%;
+    line-height: 8vh;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+nav ul li a:hover{
+    transition: all 1s ease-out;
+    color: #ED8814;
+    box-shadow: 0px 0px 10px 4px rgba(233, 223, 223, 0.75);
+	-moz-box-shadow: 0px 0px 10px 4px rgba(233, 223, 223, 0.75);
+	-webkit-box-shadow: 0px 0px 10px 4px rgba(233, 223, 223, 0.75);
+}
+.carre{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    /* background-color:black; */
+    /* height: 00px; */
+    width: 250px;
+    margin: 30px;
+    /* overflow: hidden; */
+    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+}
+
+.titre-scroll{
+    background-color:transparent;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+}
+.wrapper{
+    flex-direction: row;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    width: 400vh;
+}
+.outer-wrapper{
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display:none;
+}
+.containerInterne{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.achat, .location{
+    height: 278px;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.textimage{
+    text-align: center;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    margin: 40px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap ;
+}
+
+table{
+    border-collapse: collapse; 
+}
+td{
+    border: 1px solid black;
+    padding: 5px;
+}

@@ -78,6 +78,12 @@ public class ClientDao implements IDAO<Client>{
 		// TODO Auto-generated method stub
 		return false;
 	}
+
+	@Override
+	public boolean delete(int Id_test) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 	
 
 	

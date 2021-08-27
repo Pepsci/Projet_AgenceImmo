@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li class="navlinks"><a href="#">Gestion</a></li>
+            <li class="navlinks"><a href="#">Ajouter</a></li>
+        </ul>
+    </nav>
+
+    <table>
+            <th>
+                <td>id</td>
+                <td>Type de bien</td>
+                <td>Satus</td>
+                <td>Adresse</td>
+                <td>Prix</td>
+                <td>Surface</td>
+                <td>Nombre de piece</td>
+                <td>Image</td>
+                <td>Créer le</td>
+                <td>Modifier</td>
+                <td>Supprimer</td>
+            </th>
+        <c:forEach var="test" items="${list}">
+        <c:url var="afficher" value="/bien">
+        <c:param name="id_test" value="${test.id_test}" />
+            <tr>
+                <td>${test.id_test}</td>
+                <td>${test.typebien}</td>
+                <td>${test.status}</td>
+                <td>${test.adresse}</td>
+                <td>${test.prix}</td>
+                <td>${test.surface}</td>
+                <td>${test.nbrpiece}</td>
+                <td>${test.imgcouv}</td>
+                <td>${test.created_at}</td>
+                <td></td>
+                <td></td>
+            </tr>
+    </c:forEach>
+    </table>
+<input type="submit" value="delete">
+</body>
+</html>

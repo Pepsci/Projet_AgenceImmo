@@ -1,11 +1,26 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<link rel="stylesheet" type="text/css" href="${context}./assets/css/form.css">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<c:set var="context" value="${pageContext.request.contextPath}"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="${context}/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="${context}/assets/css/form.css">
+    <title>Document</title>
+</head>
+<body>
+    <header><a href="${context}/index">agenceimmo</a></header>
+    <nav>
+        <ul>
+            <li class="navlinks"><a href="${context}/admin">Gestion</a></li>
+            <li class="navlinks"><a href="${context}/formtest">Ajouter</a></li>
+        </ul>
+    </nav>
 
-<%@ include file="../components/header.jsp" %>
-
-    
-    
 <form action="${context}/formtest" method="post" class="ajoutBien" enctype="multipart/form-data">
 		<label>Choix du type de Bien</label>
 	        <select name="typebien" id="" value="typebien">

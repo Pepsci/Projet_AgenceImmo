@@ -27,6 +27,7 @@ header, a{
 
 nav{
     display: flex;
+    flex-direction:row;
     align-items: center;
     min-height: 8vh;
     background-color: cornsilk;
@@ -42,7 +43,7 @@ nav, ul{
     cursor: pointer;
     list-style: none;
 }
-.nav-links, a{
+nav ul li a{
     width: 120px;
     height: 100%;
     line-height: 8vh;
@@ -61,3 +62,98 @@ nav ul li a:hover{
 	-moz-box-shadow: 0px 0px 10px 4px rgba(233, 223, 223, 0.75);
 	-webkit-box-shadow: 0px 0px 10px 4px rgba(233, 223, 223, 0.75);
 }
+
+/* page index */
+
+.carre{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    /* background-color:black; */
+    /* height: 00px; */
+    width: 250px;
+    margin: 30px;
+    /* overflow: hidden; */
+    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+}
+
+.titre-scroll{
+    background-color:transparent;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+}
+.wrapper{
+    flex-direction: row;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    width: 400vh;
+}
+.outer-wrapper{
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display:none;
+}
+.containerInterne{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.achat, .location{
+    height: 278px;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.textimage{
+    text-align: center;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    margin: 40px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap ;
+}
+.selection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10%;
+}
+.btnselection{
+	cursor: pointer;
+    border: solid 2px black;
+    margin-left:40px;
+    text-align: center;
+}
+.btn{
+    height: 110px;
+    width:160px;
+    align-content: center;
+}
+
+

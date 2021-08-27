@@ -1,8 +1,10 @@
 package model;
 
+import java.sql.Timestamp;
+
 public class Test {
 	
-	private int id;
+	private int id_test;
 	private String typebien;
 	private String status;
 	private String adresse;
@@ -10,12 +12,23 @@ public class Test {
 	private Double surface;
 	private int nbrpiece;
 	private String imgcouv;
+	private Timestamp created_at;
 	
 	public Test() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
 
+	public Test(String status, String adresse, Double prix) {
+		super();
+		this.status = status;
+		this.adresse = adresse;
+		this.prix = prix;
+	}
+
+
+	
 	public Test(String typebien, String status, String adresse, Double prix, Double surface, int nbrpiece, String imgcouv) {
 		super();
 		this.typebien = typebien;
@@ -27,13 +40,6 @@ public class Test {
 		this.imgcouv = imgcouv;
 	}
 
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
 
 	public String getTypebien() {
 		return typebien;
@@ -91,5 +97,29 @@ public class Test {
 		this.imgcouv = imgcouv;
 	}
 
+	@Override
+	public String toString() {
+		return "Test [status=" + status + ", adresse=" + adresse + ", prix=" + prix + "]";
+	}
+
+
+	public Timestamp getCreated_at() {
+		return created_at;
+	}
+
+
+	public void setCreated_at(Timestamp created_at) {
+		this.created_at = created_at;
+	}
+
+
+	public int getId_test() {
+		return id_test;
+	}
+
+
+	public void setId_test(int id_test) {
+		this.id_test = id_test;
+	}
 
 }
